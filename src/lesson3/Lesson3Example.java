@@ -16,6 +16,7 @@ public class Lesson3Example {
         int value = 5;
         value += 25;
         value++;
+        value--;
         System.out.println(value);
     }
 }
