@@ -26,7 +26,7 @@ public class Lesson19Task3 {
     public static double calculateMoney(int months) {
         int count = 1;
         while (count <= months) {
-            if (count % 6 == 0) {
+            if (count > 5 && count % 6 == 1) {
                 salary += 400;
             }
             addSalary();
@@ -48,9 +48,11 @@ public class Lesson19Task3 {
 
     public static void transferMoneyToBroker() {
         investMoney += salary * percentOfBroker;
+        sumMoney -= salary * percentOfBroker;
     }
 
     public static void rent() {
-        sumMoney += (investMoney * percentOfRent);
+        sumMoney += investMoney * percentOfRent;
+        investMoney -= investMoney * percentOfRent;
     }
 }
