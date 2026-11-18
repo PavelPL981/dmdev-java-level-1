@@ -1,4 +1,4 @@
-package lesson20;
+package lesson21;
 
 public class ArrayExample2 {
 
