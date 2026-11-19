@@ -33,11 +33,11 @@ public class Task2Lesson22 {
     }
 
     public static void fillArray2(int[] values) {
-        int currentIndex = 0;
-        for (int currentValue = 1; currentIndex < values.length; currentValue++) {
+        // int currentIndex = 0;
+        for (int currentValue = 1, currentIndex = 0; currentIndex < values.length; currentValue++) {
             if (currentValue % 13 == 0 || currentValue % 17 == 0) {
-                values[currentIndex] = currentValue;
-                currentIndex++;
+                values[currentIndex++] = currentValue;
+                //currentIndex++;
             }
         }
     }
